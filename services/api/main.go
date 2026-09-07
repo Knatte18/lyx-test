@@ -21,6 +21,7 @@ func ComposeGreeting(name string) string {
 }
 
 // ComposeFarewell returns a farewell for name, defaulting to "world" when name is empty.
+// It delegates that default to the shared orDefault helper, the same one ComposeGreeting uses.
 func ComposeFarewell(name string) string {
 	return fmt.Sprintf("Goodbye, %s!", orDefault(name))
 }
