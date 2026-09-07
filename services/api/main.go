@@ -18,3 +18,8 @@ func defaultName(name string) string {
 func ComposeGreeting(name string) string {
 	return fmt.Sprintf("Hello, %s!", defaultName(name))
 }
+
+// ComposeFarewell returns a farewell for name, defaulting to "world" when name is empty.
+func ComposeFarewell(name string) string {
+	return fmt.Sprintf("Goodbye, %s!", defaultName(name))
+}
