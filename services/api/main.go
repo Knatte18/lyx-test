@@ -8,7 +8,7 @@ func main() {
 	fmt.Println(ComposeFarewell("lyx"))
 }
 
-func defaultName(name string) string {
+func orDefault(name string) string {
 	if name == "" {
 		return "world"
 	}
@@ -17,10 +17,10 @@ func defaultName(name string) string {
 
 // ComposeGreeting returns a greeting for name, defaulting to "world" when name is empty.
 func ComposeGreeting(name string) string {
-	return fmt.Sprintf("Hello, %s!", defaultName(name))
+	return fmt.Sprintf("Hello, %s!", orDefault(name))
 }
 
 // ComposeFarewell returns a farewell for name, defaulting to "world" when name is empty.
 func ComposeFarewell(name string) string {
-	return fmt.Sprintf("Goodbye, %s!", defaultName(name))
+	return fmt.Sprintf("Goodbye, %s!", orDefault(name))
 }
