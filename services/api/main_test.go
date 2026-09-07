@@ -18,3 +18,20 @@ func TestComposeGreeting(t *testing.T) {
 		}
 	}
 }
+
+func TestComposeFarewell(t *testing.T) {
+	cases := []struct {
+		name string
+		want string
+	}{
+		{"lyx", "Goodbye, lyx!"},
+		{"", "Goodbye, world!"},
+		{"Ada Lovelace", "Goodbye, Ada Lovelace!"},
+	}
+
+	for _, c := range cases {
+		if got := ComposeFarewell(c.name); got != c.want {
+			t.Errorf("ComposeFarewell(%q) = %q, want %q", c.name, got, c.want)
+		}
+	}
+}
