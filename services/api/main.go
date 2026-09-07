@@ -4,11 +4,11 @@ import "fmt"
 
 // Dummy subpath fixture for weft relpath-mirroring tests.
 func main() {
-	fmt.Println(FormatGreeting("lyx"))
+	fmt.Println(ComposeGreeting("lyx"))
 }
 
-// FormatGreeting returns a greeting for name, defaulting to "world" when name is empty.
-func FormatGreeting(name string) string {
+// ComposeGreeting returns a greeting for name, defaulting to "world" when name is empty.
+func ComposeGreeting(name string) string {
 	if name == "" {
 		name = "world"
 	}

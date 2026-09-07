@@ -2,7 +2,7 @@ package main
 
 import "testing"
 
-func TestFormatGreeting(t *testing.T) {
+func TestComposeGreeting(t *testing.T) {
 	cases := []struct {
 		name string
 		want string
@@ -13,8 +13,8 @@ func TestFormatGreeting(t *testing.T) {
 	}
 
 	for _, c := range cases {
-		if got := FormatGreeting(c.name); got != c.want {
-			t.Errorf("FormatGreeting(%q) = %q, want %q", c.name, got, c.want)
+		if got := ComposeGreeting(c.name); got != c.want {
+			t.Errorf("ComposeGreeting(%q) = %q, want %q", c.name, got, c.want)
 		}
 	}
 }
