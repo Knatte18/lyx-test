@@ -4,7 +4,7 @@ import "fmt"
 
 // Dummy subpath fixture for weft relpath-mirroring tests.
 func main() {
-	fmt.Println(ComposeGreeting("lyx"))
+	fmt.Println(shout(ComposeGreeting("lyx")))
 	fmt.Println(ComposeFarewell("lyx"))
 }
 
