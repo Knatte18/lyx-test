@@ -15,6 +15,10 @@ func orDefault(name string) string {
 	return name
 }
 
+func shout(s string) string {
+	return s + "!"
+}
+
 // ComposeGreeting returns a greeting for name, defaulting to "world" when name is empty.
 func ComposeGreeting(name string) string {
 	return fmt.Sprintf("Hello, %s!", orDefault(name))
