@@ -5,3 +5,8 @@ package greet
 func Hello() string {
 	return "hello"
 }
+
+// Farewell returns the fixture farewell.
+func Farewell() string {
+	return "goodbye"
+}
