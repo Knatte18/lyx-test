@@ -2,6 +2,7 @@
 package greet
 
 // Hello returns the fixture greeting.
+// Its closing counterpart is Farewell.
 func Hello() string {
 	return "hello"
 }
